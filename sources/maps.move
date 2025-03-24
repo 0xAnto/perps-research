@@ -41,6 +41,13 @@ module anto::maps {
         MAX_U64 - k
     }
 
+    public fun match(caller: &signer, key: u64, val: u64, is_ascending: bool) acquires Holder {
+        let holder = &mut Holder[address_of(caller)];
+        let remaining = val;
+        let as_key = get_as_key(key);
+        let ds_key = get_ds_key(key);
+    }
+
     public fun add_to_map(caller: &signer, key: u64, val: u64, is_ascending: bool) acquires Holder {
         let holder = &mut Holder[address_of(caller)];
         if(is_ascending) {
