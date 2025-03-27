@@ -47,7 +47,7 @@ module anto::storage {
     //   "storage_fee_refund_octas": "0",
     //   "total_charge_gas_units": "471"
     // }
-    public entry fun ab(caller: &signer){
+    public entry fun create_big_ordered_map(caller: &signer){
         move_to(caller, BigOrderedMapHolder {
             map: big_ordered_map::new<u64, Data>(),
             count: 0
