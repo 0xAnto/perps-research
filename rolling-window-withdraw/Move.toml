@@ -1,0 +1,15 @@
+[package]
+name = "RollingWindowWithdraw"
+version = "1.0.0"
+authors = []
+
+[addresses]
+anto="0xf2f4eaa20b251213b95fcd90aad443149486408e77820192bf4688c5cd521a13"
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = "https://github.com/aptos-labs/aptos-framework.git"
+rev = "mainnet"
+subdir = "aptos-framework"
+
+[dev-dependencies]
